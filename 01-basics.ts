@@ -1,16 +1,16 @@
 // console.log("Hello World!")
 
-let userName: string = "Elmer";
-let userAge = 31;
+let userName: string = "Kathline";
+let userAge = 21; 
 
 // ...
 
-userAge = "31"
+userAge = 21
 
 console.log(`Username - ${userName}`)
 console.log(`Age - ${userAge}`)
 
-function add(a: number, b = 5) {
+function add(a: number, b = 5): number {
     return a + b
 }
 
