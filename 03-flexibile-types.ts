@@ -1,9 +1,9 @@
-let age: any = 31
+let age: any = 21;
 
 // ...
 
-age = '31'
-age = true
+age = '21'
+age = false
 age = {}
 age = []
 
