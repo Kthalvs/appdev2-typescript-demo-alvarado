@@ -1,11 +1,19 @@
 (() => {
     // Literal Types (Alternative to Enum)
+    // This restricts the value to specific strings only
     let userRole: 'admin' | 'guess' | 'teacher' | 'student' = 'admin'
 
-    userRole = 'guess'
-    // anotherUserRole = 'superadmin'
 
+    // Changing value within allowed options
+    userRole = 'student'
+
+    // invalid value (not part of allowed roles)
+    // UserRole = 'superadmin'
+
+    // Function that accepts only specific roles
     function access(role: 'admin' | 'guess' | 'teacher' | 'student') {
-        // ...
+        console.log("Access role:", role)
     }
-})
+
+    access(userRole)
+})()
