@@ -49,18 +49,19 @@ This file explains how to define arrays and objects with specific types. It demo
 This file introduces enums which define a set of named constants. It helps manage fixed values like user roles in a structured way.
 
 ## 06-alternative-to-enum.ts
-
+This file shows an alternative to enums using literal types. It restricts values to specific strings like 'admin', 'teacher', or 'student'.
 
 ## 07-custom-type-role.ts
-
+This file demonstrates custom types using the `type` keyword. It helps create reusable and organized type definitions for objects and variables.
 
 ## 08-functions.ts
-
+This file explains how to define function types, return types, and special types like `void` and `never`. It also shows how to use functions as types (callbacks).
 
 ## 09-special-types.ts
-
+This file demonstrates special types such as `null` and `undefined`. It shows how variables can accept only specific values or combinations.
 
 ## 10-form.html and 10-type-narrowing.ts
-
+These files demonstrate how TypeScript works with the DOM. It shows how to safely access elements by checking for null values using type narrowing.
 
 ## 11-optional.ts
+This file explains optional parameters and properties using `?`. It also introduces the nullish coalescing operator `??` which only checks for null or undefined.
