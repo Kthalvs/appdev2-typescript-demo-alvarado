@@ -1,9 +1,9 @@
 // Optional Values in parameter
 function generateError(msg?: string) {
-    throw new Error(msg)
+    console.log("Error message:", msg)
 }
 
-generateError("An error occured") // Automatic Semicolon Insertion pitfall - add ; to explicitly tell that this is a function
+generateError("An error occured"); // Automatic Semicolon Insertion pitfall - add ; to explicitly tell that this is a function
 // generateError()
 
 
@@ -16,17 +16,20 @@ generateError("An error occured") // Automatic Semicolon Insertion pitfall - add
     }
 
     let user: User = {
-        name: 'Elmer',
-        age: 31
+        name: 'Kathline',
+        age: 21
     }
 
-    user.name
-    user.age
-})
+    console.log("User info:", user)
+})()
 
 // Nullish Coalescing `??` operator 
 let input = ''
+
+// Returns fallback only if null or undefined
 const didProvideInput = input ?? false;
+
+console.log("Input check:", didProvideInput)
 
 // try it on browser console log to see results
 // update it `??` to `||`
