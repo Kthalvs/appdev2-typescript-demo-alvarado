@@ -11,11 +11,17 @@
         permission: string[];
     }
 
-    let userRole: Role = 'admin'
-
-    // ...
-
-    function access(role: Role) {
-        // ...
+    let user: User = {
+        name: "Kathline",
+        age: 21,
+        role: "student",
+        permission: ["read"]
     }
-})
+       
+    function access(role: Role) {
+        console.log("Role access:", role)
+    }
+
+    access(user.role)
+    console.log("User:", user)
+})()
