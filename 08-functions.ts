@@ -5,7 +5,7 @@
         return a + b
     }
 
-    add(5, 10)
+    console.log("Addition result;", add(5, 10));
     // add("5", 10)
 
     // Special Type `void` - return nothing
@@ -14,13 +14,13 @@
         console.log(message)
     }
 
-    log("Hello, World!")
+    log("Hello, Kathline!")
 
     // Another Special Type `never`
     // Function never finishes normally (throws error, infinite loop)
-    function logAndThrow(errorMessage: string) {
-        console.log(errorMessage)
-        throw new Error(errorMessage)
+    function logAndThrow(errorMessage: string): never {
+        console.log(errorMessage);
+        throw new Error(errorMessage);
     }
 
     // Function as Types
@@ -29,7 +29,6 @@
     // () => {} - arrow function
     // () => void - function type
     function performJob(cb: (m: string) => void) {  // you can also use cb: Function but () => void is the best practice
-        // ...
         cb('Job Done!')
     }
 
@@ -47,16 +46,13 @@
     }
 
     let user: User = {
-        name: "Elmer",
-        age: 39,
-        // greet: function() {
-        //     return this.name
-        // }
+        name: "Kathline",
+        age: 21,
         greet() {
             console.log(`Hello, ${this.name}`)
             return this.name
         }
     }
 
-    user.greet()
-})
+    user.greet();
+})()
